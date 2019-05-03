@@ -60,7 +60,7 @@ public class FirebaseDBCollectionToExcel {
 
         if ( root.canWrite()) {
         	
-            File dir    =   new File ( root.getAbsolutePath() + "/" + dirName);
+            File dir    =   new File ( root.getAbsolutePath() + File.separator + dirName);
             dir.mkdirs();
             file = new File( dir, fileName + ".csv");
             FileOutputStream out = null;
