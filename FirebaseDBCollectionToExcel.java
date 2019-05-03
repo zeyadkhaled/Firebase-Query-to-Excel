@@ -34,7 +34,7 @@ public class FirebaseDBCollectionToExcel {
 			if ( i < fieldsNames.length - 1)
 				excelData += ",";
 			else
-				excelData += "\n";
+				excelData += System.lineSeparator();
 		}
 	}
 	
@@ -47,7 +47,7 @@ public class FirebaseDBCollectionToExcel {
 			if ( i < fieldsNames.length - 1)
 				rowData += ",";
 			else
-				rowData += "\n";
+				rowData += System.lineSeparator();
 		}	
 		
 		excelData += rowData;
